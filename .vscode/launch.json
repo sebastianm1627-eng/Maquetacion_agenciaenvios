@@ -4,8 +4,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Abrir Agencia de Envios",
-            "url": "http://localhost/Maquetacion_agenciaenvios/inicio.php",
+            "name": "Abrir Login Agencia",
+            "url": "http://localhost/Maquetacion_agenciaenvios/login.php",
             "webRoot": "${workspaceFolder}"
         }
     ]
