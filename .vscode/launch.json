@@ -5,8 +5,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Abrir Login Agencia",
-            "url": "http://localhost/Maquetacion_agenciaenvios/login.php",
-            "webRoot": "${workspaceFolder}"
+            "file": "c:\\xampp\\htdocs\\Maquetacion_agenciaenvios\\login.html"
         }
     ]
 }
