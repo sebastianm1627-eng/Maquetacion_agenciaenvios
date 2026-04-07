@@ -1,0 +1,124 @@
+/* ===== Estilos globales ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===== Caja pequeña centrada ===== */
+.container {
+    width: 420px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    animation: aparecer 0.3s ease-in-out;
+
+    /* 🔥 IMPORTANTE: organiza el contenido en columnas */
+    display: flex;
+    flex-direction: column;
+    gap: 18px; /* separación entre secciones */
+}
+
+/* ===== Animación suave ===== */
+@keyframes aparecer {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* ===== Títulos ===== */
+h2, h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: #222;
+}
+
+h3 {
+    color: #444;
+    font-size: 1.1rem;
+}
+
+/* ===== Inputs y selects ===== */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #6f42c1;
+    outline: none;
+    box-shadow: 0 0 5px rgba(111, 66, 193, 0.3);
+}
+
+/* ===== Botones ===== */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #6f42c1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #5833a0;
+    transform: translateY(-2px);
+}
+
+/* ===== Tarjeta de datos del envío ===== */
+.card {
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 14px;
+    border: 1px solid #e3e3e3;
+
+    /* 🔥 vertical y separado */
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* ===== Mensajes ===== */
+.mensaje,
+.error {
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Mensaje verde */
+.mensaje {
+    background: #d4edda;
+    color: #155724;
+    border-left: 5px solid #28a745;
+}
+
+/* Mensaje rojo */
+.error {
+    background: #f8d7da;
+    color: #721c24;
+    border-left: 5px solid #dc3545;
+}

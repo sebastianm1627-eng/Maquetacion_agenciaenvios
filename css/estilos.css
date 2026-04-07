@@ -1,0 +1,257 @@
+/* ============================
+   🎨 ESTILOS GENERALES
+============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #00aaff, #0077ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ============================
+   🧩 CONTENEDOR PRINCIPAL
+============================ */
+.contenedor {
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* ============================
+   🖼️ LOGO
+============================ */
+.logo {
+    width: 90px;
+    margin-bottom: 15px;
+}
+
+/* ============================
+   📝 TITULOS
+============================ */
+h1, h2 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin: 10px 0 20px;
+}
+
+/* ============================
+   🔤 FORMULARIO
+============================ */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* ============================
+   🧭 BOTONES
+============================ */
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-secundario {
+    background-color: #28a745;
+}
+
+.btn-secundario:hover {
+    background-color: #1e7e34;
+}
+
+/* ============================
+   ↩️ ENLACES
+============================ */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.volver {
+    display: block;
+    margin-top: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* ============================
+   📱 RESPONSIVO
+============================ */
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 20px;
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}
+.descripcion {
+  font-size: 0.95em;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.olvido {
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.olvido:hover {
+  text-decoration: underline;
+}
+/* ===== MENÚ PRINCIPAL ===== */
+.encabezado {
+  text-align: center;
+  background-color: #0077b6;
+  color: white;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.menu-principal {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.botones-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.botones-menu .btn {
+  width: 250px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.btn-primario { background-color: #0077b6; }
+.btn-secundario { background-color: #00b4d8; }
+.btn-rojo { background-color: #d62828; }
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.pie {
+  text-align: center;
+  margin-top: 40px;
+  color: gray;
+  font-size: 0.9rem;
+}
+.tabla-envios {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabla-envios th, .tabla-envios td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabla-envios th {
+  background-color: #007bff;
+  color: white;
+}
+
+.estado-enviado {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.estado-proceso {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.estado-entregado {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.tabla-envios tr:hover {
+  background-color: #f2f2f2;
+}
+textarea {
+  font-size: 14px;
+  resize: vertical;
+}
+textarea {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  padding: 8px 10px;
+  border-radius: 8px;
+  resize: vertical;
+}
+

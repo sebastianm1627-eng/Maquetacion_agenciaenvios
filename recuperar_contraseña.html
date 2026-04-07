@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <img src="img/logo.png" alt="Logo de la Agencia" class="logo">
+
+        <h2>Recuperar Contraseña 🔑</h2>
+
+        <p class="descripcion">
+            Ingresa el correo con el que te registraste.  
+            Te enviaremos un enlace para restablecer tu contraseña.
+        </p>
+
+        <form action="confirmacion.html" method="GET">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+            <button type="submit" class="btn btn-secundario">Enviar enlace</button>
+        </form>
+
+        <p>
+            <a href="login.html">⬅ Volver al inicio de sesión</a>
+        </p>
+    </div>
+</body>
+</html>
