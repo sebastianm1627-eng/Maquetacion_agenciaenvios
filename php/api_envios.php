@@ -1,6 +1,3 @@
-<?php
-include("conexion.php");
-
 $sql = "SELECT * FROM envios";
 $resultado = mysqli_query($con, $sql);
 
